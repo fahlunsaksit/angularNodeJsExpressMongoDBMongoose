@@ -11,7 +11,13 @@
         </div>
         <button class="btn btn-primary">Submit</button>
       </form>
+
+      <hr>
+      <p>All Feedback</p>
+      <ul>
+        <li *ngFor="let data of mDataArray">{{ data.username }} : <span style="color: gray">{{data.feedback}}</span></li>
+      </ul>
 </div>
 
 
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
